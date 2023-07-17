@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.two-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.lang {
+    display: inline;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.363);
+    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.lang img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.head-content {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-content-wrap {
+    height: fit-content;
+}
+
+.head-content h1 {
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    /* max-width: 650px; */
+}
+
+.head-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.signup {
+    /* background: white; */
+    /* border-radius: 4px; */
+    display: flex;
+    align-items: center;
+    /* margin-top: 30px; */
+    overflow: hidden;
+    margin: 30px auto;
+    width: 60%;
+    gap: 1rem;
+}
+
+.signup input {
+    flex: 1;
+    border: 1.5px solid rgba(255, 255, 255, 0.466);
+    border-radius: 5px;
+    outline: 0;
+    margin-left: 20px;
+    background: rgba(0, 0, 0, 0.534);
+    height: 3rem;
+    padding: 1rem;
+
+}
+
+.signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 4px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.border {
+    width: 100vw;
+    height: 0.5rem;
+    background-color: #232323;
+}
+
+/*--------------------types---------------------*/
+
+.types {
+    padding: 50px 0;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.col-text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.col-image {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.col-image img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.types h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*-----------------faq-----------*/
+
+.faq {
+    padding: 25px 5%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    /* width: ; */
+}
+
+.faq h2 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.questions {
+    margin: 60px auto;
+    width: 60%;
+    /* max-width: 750px; */
+}
+
+.questions li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.questions li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    /* transition: transform 0.7s; */
+    transform: rotate(0deg);
+    transition-duration: 0.7s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.questions .answer {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.questions input[type="radio"]:checked+label+.answer {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.questions input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq .signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small {
+    font-size: 25px;
+}
+
+/* -----------------footer------------- */
+
+.footer {
+    padding: 50px 25%;
+    border-top: 6px solid #333;
+    color: #B3B3B3;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    /* text-decoration: none; */
+    color: #B3B3B3;
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer .lang {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* ---------------media query------------ */
+
+@media only screen and (max-width: 650px) {
+    .logo {
+        width: 80px;
+        margin-left: -50px;
+    }
+
+    .two-button {
+        display: block;
+        margin-right: -60px;
+    }
+
+    .lang {
+        padding: 4px;
+    }
+
+    nav button {
+        display: flex;
+        margin-top: 10px;
+        margin-right: -25px;
+        padding-right: 50px;
+        justify-content: center;
+    }
+
+    .head-content {
+        /* position: unset;
+        transform: none; */
+        padding-top: 40px;
+        margin-top: -100px;
+    }
+
+    .head-content h1 {
+        font-size: 30px;
+    }
+
+    .signup {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* .signup button {
+        font-size: 12px;
+        padding: 10px 15px;
+    } */
+    .signup input {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .col-text,
+    .col-image {
+        flex-basis: 100%;
+    }
+
+    .types h2 {
+        font-size: 30px;
+    }
+
+    .types p {
+        font-size: 15px;
+    }
+
+    .types .row {
+        padding: 10px 0;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .questions .answer {
+        font-size: 14px;
+    }
+
+    .questions li label {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .answer p {
+        font-size: 10px;
+    }
+
+    label::after {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo {
+        width: 80px;
+        margin-left: -50px;
+    }
+
+    .two-button {
+        display: block;
+        margin-right: -50px;
+    }
+
+    .lang {
+        padding: 4px;
+    }
+
+    nav button {
+        display: flex;
+        margin-top: 10px;
+        margin-right: -15px;
+        padding-right: 50px;
+        justify-content: center;
+    }
+
+    .head-content-wrap {
+        margin-bottom: 15%;
+    }
+
+    .signup {
+        margin-left: -10px;
+    }
+}
