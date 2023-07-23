@@ -23,13 +23,13 @@ To run the Netflix clone locally, follow these steps:
 1. Clone this repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/omkarjha/Dupli_Netflix.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd netflix-clone
+   cd Dupli_Netflix
    ```
 
 3. Open the `index.html` file in your web browser.
